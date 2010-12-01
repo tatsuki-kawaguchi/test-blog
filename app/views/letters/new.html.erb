@@ -1,0 +1,5 @@
+<h1>コメントを送る</h1>
+<% form_tag(:action => :create)  do %>
+<%= text_area_tag :message, nil, :size => "80*20" %><br />
+<%= submit_tag "送信", :confirm => "メールを送信します", :disable_with => "送信中・・・" %>
+<% end %>

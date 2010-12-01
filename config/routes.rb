@@ -59,4 +59,5 @@ Blog::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 
   root :to => "posts#index"
+  resources :letters, :only => [:new, :create]
 end
